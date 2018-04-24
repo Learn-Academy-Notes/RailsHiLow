@@ -1,0 +1,11 @@
+Your guess was: <%= @guess_num %> <br/>
+Number of tries remaining: <%= cookies[:tries] %>
+<hr/>
+<form action="answers" method="get">
+  <input type="number" name="guess" min="1" max="100" required/>
+  <input type="submit" value="Submit Number"/>
+</form>
+<br/>
+<form action="reset" method="get">
+    <input type="reset" value="Restart"/>
+</form>
